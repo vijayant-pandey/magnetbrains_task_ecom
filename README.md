@@ -39,7 +39,7 @@ This is a full-stack eCommerce web application built using the MERN stack (Mongo
 ### Step 1: Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/mern-ecommerce-app.git
+[git clone https://github.com/yourusername/mern-ecommerce-app.git](https://github.com/vijayant-pandey/magnetbrains_task_ecom.git)
 cd mern-ecommerce-app
 Step 2: Install Backend Dependencies
 Navigate to the backend directory and install the dependencies:
@@ -51,13 +51,20 @@ npm install
 Step 3: Set up Environment Variables
 Create a .env file in the backend directory and add the following variables:
 
-env
+env -- backend
 Copy code
-MONGO_URI=mongodb://localhost:27017/yourdbname
-JWT_SECRET=your_jwt_secret
-PAYPAL_CLIENT_ID=your_paypal_client_id (if using PayPal)
-STRIPE_SECRET_KEY=your_stripe_secret_key (if using Stripe)
 PORT=5000
+MONGO_URI=mongodb+srv://vijayantecom:vkp12311@projects.yywqc.mongodb.net/magnetbrains-ecom?retryWrites=true&w=majority&appName=PROJECTS
+JWT_SECRET=some_super_secret_key_here
+JWT_EXPIRES_IN=7d
+STRIPE_SECRET_KEY=sk_test_51QSO34P3n1RfUKI1b4RRBab2WaR1W9xtvBQfDQGblqmqxXz2BltNjdzT5dTwL2UsNOglJtLLtnKYKqHWpNVsnHgn00BFdDuAka
+CLIENT_URL=http://localhost:3000
+
+env --rontend
+REACT_APP_API_URL=http://localhost:5000/api
+REACT_APP_STRIPE_PUBLIC_KEY=pk_test_51QSO34P3n1RfUKI19NnY3HUVUcrDZTGR8UjfquTIvJPAXXBZu3GEVn7kehF5n7PTX91v8pFkKDFrlhlzCXfFaIvi00YuSgdh99
+
+
 Step 4: Install Frontend Dependencies
 Navigate to the frontend directory and install the dependencies:
 
